@@ -1,0 +1,110 @@
+=========================================================================
+   CVL7411 ADVANCED STRUCTURAL ANALYSIS PROJECT REPORT
+   3D SINGLE-STOREY REGULAR HEXAGONAL SPACE FRAME WITH RIGID SLAB
+=========================================================================
+
+1. INPUT PARAMETERS:
+-------------------------------------------------------------------------
+Side Length L = 5.00 m | Storey Height H = 4.00 m
+Lateral Load Px = 50.00 kN per node | Total Px = 300.00 kN
+Concrete E = 2.50e+07 kPa | Shear Modulus G = 1.04e+07 kPa
+Column: 0.40 x 0.40 m | Beam: 0.30 x 0.40 m
+
+2. GLOBAL EQUILIBRIUM VERIFICATION:
+---------------------------------------------------------
+Sum of Base Reactions (Fx) : -300.000 kN
+Total Applied Load (Fx)    : 300.000 kN
+Status                     : VERIFIED (Equilibrium Satisfied)
+
+3. NODAL COORDINATES (m):
+-------------------------------------------------------------------------
+Node ID |    X (m)   |    Y (m)   |    Z (m)   | Description
+   1    |     5.0000 |     0.0000 |     0.0000 | Base Fixed Support
+   2    |     2.5000 |     4.3301 |     0.0000 | Base Fixed Support
+   3    |    -2.5000 |     4.3301 |     0.0000 | Base Fixed Support
+   4    |    -5.0000 |     0.0000 |     0.0000 | Base Fixed Support
+   5    |    -2.5000 |    -4.3301 |     0.0000 | Base Fixed Support
+   6    |     2.5000 |    -4.3301 |     0.0000 | Base Fixed Support
+   7    |     5.0000 |     0.0000 |     4.0000 | Roof Rigid Joint
+   8    |     2.5000 |     4.3301 |     4.0000 | Roof Rigid Joint
+   9    |    -2.5000 |     4.3301 |     4.0000 | Roof Rigid Joint
+  10    |    -5.0000 |     0.0000 |     4.0000 | Roof Rigid Joint
+  11    |    -2.5000 |    -4.3301 |     4.0000 | Roof Rigid Joint
+  12    |     2.5000 |    -4.3301 |     4.0000 | Roof Rigid Joint
+
+4. NODAL DISPLACEMENTS (m, rad):
+-------------------------------------------------------------------------
+Node |    Ux (m)   |    Uy (m)   |    Uz (m)   |   Rx (rad)  |   Ry (rad)  |   Rz (rad)  
+  1  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  2  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  3  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  4  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  5  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  6  |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00 |  0.0000e+00
+  7  |  8.6838e-03 |  0.0000e+00 | -3.0177e-05 |  0.0000e+00 |  2.3702e-03 |  0.0000e+00
+  8  |  8.6838e-03 |  0.0000e+00 | -1.5088e-05 | -4.5753e-04 |  1.5777e-03 |  0.0000e+00
+  9  |  8.6838e-03 |  0.0000e+00 |  1.5088e-05 |  4.5753e-04 |  1.5777e-03 |  0.0000e+00
+ 10  |  8.6838e-03 |  0.0000e+00 |  3.0177e-05 |  0.0000e+00 |  2.3702e-03 |  0.0000e+00
+ 11  |  8.6838e-03 |  0.0000e+00 |  1.5088e-05 | -4.5753e-04 |  1.5777e-03 |  0.0000e+00
+ 12  |  8.6838e-03 |  0.0000e+00 | -1.5088e-05 |  4.5753e-04 |  1.5777e-03 |  0.0000e+00
+
+5. BASE SUPPORT REACTIONS (kN, kN-m):
+-------------------------------------------------------------------------
+Node |   Fx (kN)   |   Fy (kN)   |   Fz (kN)   |  Mx (kN-m)  |  My (kN-m)  |  Mz (kN-m)  
+  1  |      -39.43 |        0.00 |       30.18 |       -0.00 |     -110.47 |        0.00
+  2  |      -55.28 |        9.15 |       15.09 |      -12.20 |     -131.60 |        0.00
+  3  |      -55.28 |       -9.15 |      -15.09 |       12.20 |     -131.60 |        0.00
+  4  |      -39.43 |       -0.00 |      -30.18 |        0.00 |     -110.47 |        0.00
+  5  |      -55.28 |        9.15 |      -15.09 |      -12.20 |     -131.60 |        0.00
+  6  |      -55.28 |       -9.15 |       15.09 |       12.20 |     -131.60 |        0.00
+
+6. MEMBER END ACTIONS IN LOCAL COORDINATES:
+-------------------------------------------------------------------------
+[Column 1]
+  Node i: P=   30.18 kN, Vy=    0.00 kN, Vz=   39.43 kN, T=    0.00 kNm, My= -110.47 kNm, Mz=    0.00 kNm
+  Node j: P=  -30.18 kN, Vy=   -0.00 kN, Vz=  -39.43 kN, T=   -0.00 kNm, My=  -47.26 kNm, Mz=    0.00 kNm
+
+[Column 2]
+  Node i: P=   15.09 kN, Vy=    9.15 kN, Vz=   55.28 kN, T=    0.00 kNm, My= -131.60 kNm, Mz=   12.20 kNm
+  Node j: P=  -15.09 kN, Vy=   -9.15 kN, Vz=  -55.28 kN, T=   -0.00 kNm, My=  -89.53 kNm, Mz=   24.40 kNm
+
+[Column 3]
+  Node i: P=  -15.09 kN, Vy=   -9.15 kN, Vz=   55.28 kN, T=    0.00 kNm, My= -131.60 kNm, Mz=  -12.20 kNm
+  Node j: P=   15.09 kN, Vy=    9.15 kN, Vz=  -55.28 kN, T=   -0.00 kNm, My=  -89.53 kNm, Mz=  -24.40 kNm
+
+[Column 4]
+  Node i: P=  -30.18 kN, Vy=   -0.00 kN, Vz=   39.43 kN, T=    0.00 kNm, My= -110.47 kNm, Mz=   -0.00 kNm
+  Node j: P=   30.18 kN, Vy=    0.00 kN, Vz=  -39.43 kN, T=   -0.00 kNm, My=  -47.26 kNm, Mz=   -0.00 kNm
+
+[Column 5]
+  Node i: P=  -15.09 kN, Vy=    9.15 kN, Vz=   55.28 kN, T=    0.00 kNm, My= -131.60 kNm, Mz=   12.20 kNm
+  Node j: P=   15.09 kN, Vy=   -9.15 kN, Vz=  -55.28 kN, T=   -0.00 kNm, My=  -89.53 kNm, Mz=   24.40 kNm
+
+[Column 6]
+  Node i: P=   15.09 kN, Vy=   -9.15 kN, Vz=   55.28 kN, T=    0.00 kNm, My= -131.60 kNm, Mz=  -12.20 kNm
+  Node j: P=  -15.09 kN, Vy=    9.15 kN, Vz=  -55.28 kN, T=   -0.00 kNm, My=  -89.53 kNm, Mz=  -24.40 kNm
+
+[Beam 1]
+  Node i: P=  -10.56 kN, Vy=   -0.00 kN, Vz=   15.09 kN, T=    1.85 kNm, My=  -44.06 kNm, Mz=   -0.02 kNm
+  Node j: P=   10.56 kN, Vy=    0.00 kN, Vz=  -15.09 kN, T=   -1.85 kNm, My=  -31.38 kNm, Mz=    0.01 kNm
+
+[Beam 2]
+  Node i: P=   -0.00 kN, Vy=   -0.00 kN, Vz=   30.18 kN, T=    3.70 kNm, My=  -75.44 kNm, Mz=   -0.01 kNm
+  Node j: P=    0.00 kN, Vy=    0.00 kN, Vz=  -30.18 kN, T=   -3.70 kNm, My=  -75.44 kNm, Mz=   -0.01 kNm
+
+[Beam 3]
+  Node i: P=   10.56 kN, Vy=   -0.00 kN, Vz=   15.09 kN, T=    1.85 kNm, My=  -31.38 kNm, Mz=    0.01 kNm
+  Node j: P=  -10.56 kN, Vy=    0.00 kN, Vz=  -15.09 kN, T=   -1.85 kNm, My=  -44.06 kNm, Mz=   -0.02 kNm
+
+[Beam 4]
+  Node i: P=   10.56 kN, Vy=    0.00 kN, Vz=  -15.09 kN, T=   -1.85 kNm, My=   44.06 kNm, Mz=    0.02 kNm
+  Node j: P=  -10.56 kN, Vy=   -0.00 kN, Vz=   15.09 kN, T=    1.85 kNm, My=   31.38 kNm, Mz=   -0.01 kNm
+
+[Beam 5]
+  Node i: P=   -0.00 kN, Vy=    0.00 kN, Vz=  -30.18 kN, T=   -3.70 kNm, My=   75.44 kNm, Mz=    0.01 kNm
+  Node j: P=    0.00 kN, Vy=   -0.00 kN, Vz=   30.18 kN, T=    3.70 kNm, My=   75.44 kNm, Mz=    0.01 kNm
+
+[Beam 6]
+  Node i: P=  -10.56 kN, Vy=    0.00 kN, Vz=  -15.09 kN, T=   -1.85 kNm, My=   31.38 kNm, Mz=   -0.01 kNm
+  Node j: P=   10.56 kN, Vy=   -0.00 kN, Vz=   15.09 kN, T=    1.85 kNm, My=   44.06 kNm, Mz=    0.02 kNm
+
